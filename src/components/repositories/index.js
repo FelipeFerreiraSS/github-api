@@ -1,4 +1,5 @@
 import React from "react";
+import RepositoryItem from "../repository-item";
 
 import * as S from "./styled"
 
@@ -12,8 +13,16 @@ function Repositories() {
                 <S.WrapperTab>Repositories</S.WrapperTab>
                 <S.WrapperTab>Starreds</S.WrapperTab>
             </S.WrapperTabList>
-            <S.WrapperTabPanel>panel Repositories</S.WrapperTabPanel>
-            <S.WrapperTabPanel>panel Starreds</S.WrapperTabPanel>
+            <S.WrapperTabPanel><RepositoryItem 
+                name="alurakut" 
+                linkToRepo="https://github.com/FelipeFerreiraSS/alurakut" 
+                fullName="FelipeFerreiraSS/alurakut" 
+            /></S.WrapperTabPanel>
+            <S.WrapperTabPanel><RepositoryItem 
+                name="calculadora-javascript" 
+                linkToRepo="https://github.com/FelipeFerreiraSS/calculadora-javascript" 
+                fullName="FelipeFerreiraSS/calculadora-javascript"
+            /></S.WrapperTabPanel>
         </S.WrapperTabs>
     )
 }

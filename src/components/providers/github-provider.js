@@ -4,14 +4,14 @@ import React, { createContext, useState } from "react";
 export const GithubContext = createContext({
     user:{},
     repositories:[],
-    starred: []
+    starred: [],
 })
 
 function GithubProvider({children}) {
     const [githubState, setGithubState] = useState({
-        user:{
+        user: {
             login: undefined,
-            name: "Felipe Teste",
+            name: "Felipe",
             publicUrl: undefined,
             blog: undefined,
             company: undefined,
@@ -22,11 +22,12 @@ function GithubProvider({children}) {
             public_repos: 0
         },
         repositories:[],
-        starred: []
+        starred: [],
+
     })
 
     const contextValue = {
-        githubState
+        githubState,
     }
 
     return(

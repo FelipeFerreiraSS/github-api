@@ -11,8 +11,8 @@ function GithubProvider({children}) {
     const [githubState, setGithubState] = useState({
         user: {
             login: undefined,
-            name: "Felipe",
-            publicUrl: undefined,
+            name: "Felipe Ferreira",
+            html_url: undefined,
             blog: undefined,
             company: undefined,
             location: undefined,

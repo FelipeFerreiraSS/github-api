@@ -8,12 +8,13 @@ import Repositories from './components/repositories';
 function App() {
   return (
       <main>
-        <GithubProvider/>
-        <ResetCSS />
-        <Layout>
-          <Profile />
-          <Repositories />
-        </Layout>
+        <GithubProvider>
+          <ResetCSS />
+          <Layout>
+            <Profile />
+            <Repositories />
+          </Layout>
+        </GithubProvider>
       </main>
   );
 }

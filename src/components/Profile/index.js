@@ -14,21 +14,25 @@ function Profile() {
                   <h1>{githubState.user.name}</h1>
                   <S.WrapperUserName>
                       <h3>Username: </h3>
-                      <span>felipeferreirass</span>
+                      <span>{githubState.user.login}</span>
                   </S.WrapperUserName>
               </div>
             <S.WrapperStatusCount>
               <div>
                 <h4>Followers</h4>
-                <span>60</span>
-              </div>
-              <div>
-                <h4>Starreds</h4>
-                <span>24</span>
+                <span>{githubState.user.followers}</span>
               </div>
               <div>
                 <h4>Followings</h4>
-                <span>60</span>
+                <span>{githubState.user.following}</span>
+              </div>
+              <div>
+                <h4>Gits</h4>
+                <span>{githubState.user.public_gists}</span>
+              </div>
+              <div>
+                <h4>repos</h4>
+                <span>{githubState.user.public_repos}</span>
               </div>
             </S.WrapperStatusCount>
             </S.WrapperInfoUser>

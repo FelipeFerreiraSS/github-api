@@ -10,7 +10,7 @@ export const GithubContext = createContext({
 function GithubProvider({children}) {
     const [githubState, setGithubState] = useState({
         user: {
-            login: undefined,
+            login: user.login,
             name: "Felipe Ferreira",
             html_url: undefined,
             blog: undefined,
